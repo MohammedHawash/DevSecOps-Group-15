@@ -2,7 +2,7 @@ name: mohammedhawash-workflow
 run-name: ${{github.actor}} is testing workflow
 
 on: 
- - workflow_dispatch
+  workflow_dispatch:
     inputs:
      env: 
       type: choice 
