@@ -17,17 +17,18 @@ jobs:
    runs-on: ubuntu-latest
    steps:
     - name: "echo message"
-      run: echo "this mohammedhawash from prod " > text.txt
-           cat text.txt
+      run: |
+          echo "this mohammedhawash from prod " > text.txt
+          cat text.txt
  
  dev-job:
    if: inputs.env == 'dev'
    runs-on: ubuntu-latest
    steps:
     - name: "echo message"
-      run: echo "this mohammedhawash from env " > text.txt 
+      run: |
+           echo "this mohammedhawash from env " > text.txt 
            cat text.txt
-    - name: what files are here 
-   run: ls -la
-
+    - name: What files are here
+      run: ls -la
       
