@@ -27,7 +27,7 @@ jobs:
     - name: "echo message"
       run: echo "this mohammedhawash from env " > text.txt 
            cat text.txt
-   -name: what files are here 
+    - name: what files are here 
    run: ls -la
 
       
