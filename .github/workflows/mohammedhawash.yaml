@@ -18,7 +18,7 @@ jobs:
    steps:
     - name: "echo message"
       run: |
-          echo "this mohammedhawashh from prod " > text.txt
+          echo "this mohammedhawash from prod " > text.txt
           cat text.txt
  
  dev-job:
@@ -32,4 +32,4 @@ jobs:
     - name: What files are here
       run: ls -la  
 
-      
+  
