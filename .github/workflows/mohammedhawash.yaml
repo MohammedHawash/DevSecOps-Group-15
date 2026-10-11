@@ -18,6 +18,7 @@ jobs:
    steps:
     - name: "echo message"
       run: echo "this mohammedhawash from prod " > text.txt
+           cat text.txt
  
  dev-job:
    if: inputs.env == 'dev'
@@ -25,3 +26,8 @@ jobs:
    steps:
     - name: "echo message"
       run: echo "this mohammedhawash from env " > text.txt 
+           cat text.txt
+   -name: what files are here 
+   run: ls -la
+
+      
