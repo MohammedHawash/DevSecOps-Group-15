@@ -6,7 +6,7 @@ on:
     inputs:
      env: 
       type: choice 
-      default: qa
+      default: 
       options: 
        - dev
        - prod 
